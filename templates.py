@@ -17,7 +17,9 @@ list_of_files = [
     f"src/{project_name}/data/annotations/.gitkeep",
 
     # Dataset
-    f"src/{project_name}/datasets/multimodal_dataset.py",
+    f"src/{project_name}/datasets/__init__.py",
+    f"src/{project_name}/datasets/prepare_dataset.py",
+    
 
     # Feature Extraction
     f"src/{project_name}/features/__init__.py",
@@ -44,9 +46,7 @@ list_of_files = [
     f"src/{project_name}/utils/metrics.py",
     f"src/{project_name}/utils/visualize.py",
 
-    # Scripts
-    f"src/{project_name}/scripts/__init__.py"
-    f"src/{project_name}/scripts/prepare_dataset.py",
+
 
     f"src/{project_name}/logger.py",
     f"src/{project_name}/exception.py",

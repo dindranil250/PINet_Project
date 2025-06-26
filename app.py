@@ -2,7 +2,7 @@
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
-from src.pinet_project.scripts.prepare_dataset import main as run_prepare_dataset
+from src.pinet_project.datasets.prepare_dataset import main as run_prepare_dataset
 from src.pinet_project.logger import logging
 
 # Toggle this to True/False manually
