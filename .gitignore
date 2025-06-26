@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+*.conda
+*.env
+
+# VSCode settings
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# PyTorch / Datasets / Model Checkpoints
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Dataset artifacts
+pinet_project/data/preprocessed/
+pinet_project/data/raw_videos/
+pinet_project/data/annotations/*.tmp
+*.tar.gz
+*.zip
+*.tar
+
+# Audio & video temp outputs
+*.wav
+*.mp3
+*.mp4
+*.avi
+
+# Output results
+runs/
+output/
+checkpoints/
+cache/
+__results__/
+
+# AlphaPose/OpenPose cache
+alphapose-results/
+pose-output/
+*.json
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Docker
+*.pid
+*.sock
