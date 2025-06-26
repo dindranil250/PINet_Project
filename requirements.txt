@@ -1,0 +1,35 @@
+# Core
+numpy
+pandas
+PyYAML
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+
+# Video & Audio Processing
+opencv-python
+moviepy
+ffmpeg-python
+
+# NLP & ASR
+openai-whisper
+transformers
+sentencepiece
+
+# Face Detection
+mtcnn
+
+# Plotting / Visualization
+matplotlib
+seaborn
+
+# Utility
+tqdm
+scikit-learn
+scipy
+
+# Optional
+jupyter
+ipykernel
