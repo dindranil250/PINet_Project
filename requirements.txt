@@ -14,6 +14,7 @@ pillow
 opencv-python
 moviepy
 ffmpeg-python
+librosa
 
 # NLP & ASR
 openai-whisper

@@ -16,7 +16,7 @@ PREPROCESSED_DIR = "src/pinet_project/data/preprocessed"
 def process_video(video_path: str):
     video_name = Path(video_path).stem  # e.g., P001_Q01
     sample_dir = os.path.join(PREPROCESSED_DIR, video_name)
-    audio_path = os.path.join(sample_dir, "audio", f"{video_name}_audio.mp3")
+    audio_path = os.path.join(sample_dir, "audio", f"{video_name}_audio.wav")
     transcript_path = os.path.join(sample_dir, "text", f"{video_name}_transcript.json")
     frame_dir = os.path.join(sample_dir, "frame")
     # Step 4: Extract Faces from Frames
@@ -25,9 +25,17 @@ def process_video(video_path: str):
 
     try:
         logging.info(f"Processing {video_name}")
+         # Step 1: Extract Audio
+        print("🔊 Extracting audio...")
         extract_audio_from_video(video_path, audio_path)
+        # Step 2: Transcribe Audio
+        print("📝 Transcribing audio...")
         transcribe_audio(audio_path, transcript_path)
+        # Step 3: Extract Frames
+        print("🖼️ Extracting frames...")
         extract_frames(video_path, frame_dir)
+        # Step 4: Extract Faces
+        print("😃 Detecting faces...")
         extract_faces_from_frames(frame_dir, face_dir)
         logging.info(f"Completed {video_name}")
     except Exception as e:

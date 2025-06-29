@@ -18,7 +18,7 @@ VIDEO_PATH = "src/pinet_project/data/raw_videos/5b214ff965753400017af117_q1_gene
 VIDEO_NAME = Path(VIDEO_PATH).stem
 BASE_DIR = f"src/pinet_project/data/preprocessed/{VIDEO_NAME}"
 
-AUDIO_PATH = os.path.join(BASE_DIR, "audio", f"{VIDEO_NAME}_audio.mp3")
+AUDIO_PATH = os.path.join(BASE_DIR, "audio", f"{VIDEO_NAME}_audio.wav")
 TRANSCRIPT_PATH = os.path.join(BASE_DIR, "text", f"{VIDEO_NAME}_transcript.json")
 FRAME_DIR = os.path.join(BASE_DIR, "frame")
 FACE_DIR = os.path.join(BASE_DIR, "face")
