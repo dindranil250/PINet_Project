@@ -7,6 +7,8 @@ PyYAML
 torch
 torchvision
 torchaudio
+facenet-pytorch
+pillow
 
 # Video & Audio Processing
 opencv-python
@@ -17,6 +19,7 @@ ffmpeg-python
 openai-whisper
 transformers
 sentencepiece
+whisper-timestamped
 
 # Face Detection
 mtcnn

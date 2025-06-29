@@ -39,7 +39,7 @@ list_of_files = [
     # Main scripts
     f"src/{project_name}/train.py",
     f"src/{project_name}/eval.py",
-    f"src{project_name}/inference.py",
+    f"src/{project_name}/inference.py",
 
     # Utilities
     
